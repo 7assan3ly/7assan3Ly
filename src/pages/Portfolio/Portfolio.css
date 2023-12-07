@@ -1,0 +1,137 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 50vh;
+    grid-gap: 0px;
+}
+
+.portfolio div {
+    transition: 1s all ease;
+    cursor: pointer;
+}
+
+.Port1 {
+    background:url('../../assets/images/port1.JPG');
+    position: relative;
+    background-size: cover;
+}
+.Port2 {
+    position: relative;
+    background: url('../../assets/images/port2.png');
+    background-size: cover;
+}
+.Port3 {
+    position: relative;
+    background: url('../../assets/images/port3.png');
+    background-size: cover;
+}
+.Port4 {
+    position: relative;
+    background: url('../../assets/images/port4.png');
+    background-size: cover;
+}
+.Port5 {
+    position: relative;
+    background: url('../../assets/images/port5.png');
+    background-size: cover;
+}
+.Port6 {
+    position: relative;
+    background: url('../../assets/images/port6.png');
+    background-size: cover;
+}
+.Port7 {
+    position: relative;
+    background: url('../../assets/images/port7.png');
+    background-size: cover;
+}
+.Port8 {
+    position: relative;
+    background: url('../../assets/images/port8.png');
+    background-size: cover;
+}
+
+.layer {
+    background-color: rgba(24, 24, 24, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio:hover .Port1, 
+.portfolio:hover .Port2, 
+.portfolio:hover .Port3, 
+.portfolio:hover .Port4, 
+.portfolio:hover .Port5, 
+.portfolio:hover .Port6, 
+.portfolio:hover .Port7, 
+.portfolio:hover .Port8 { 
+filter:blur(3px);
+box-shadow:none;
+}
+.Port1:hover .layer,
+.Port2:hover .layer,
+.Port3:hover .layer,
+.Port4:hover .layer,
+.Port5:hover .layer,
+.Port6:hover .layer,
+.Port7:hover .layer,
+.Port8:hover .layer {
+    background-color: transparent;
+}
+
+
+.portfolio:hover .Port1:hover, 
+.portfolio:hover .Port2:hover, 
+.portfolio:hover .Port3:hover, 
+.portfolio:hover .Port4:hover, 
+.portfolio:hover .Port5:hover, 
+.portfolio:hover .Port6:hover, 
+.portfolio:hover .Port7:hover, 
+.portfolio:hover .Port8:hover {
+    transform:scale(1.1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgb(255, 255, 255);
+    z-index: 2;
+}
+
+/* @media screen and (max-width: 768px) {
+    .portRow1, .portRow2{
+        flex-wrap: wrap;
+    }
+    .portRow1 div, .portRow2 div {
+        width: 384px;
+        height: 245px;
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    .portRow1 div, .portRow2 div {
+        width: 300px;
+        height: 188px;
+    }
+} 
+
+@media screen and (max-width: 420px) {
+    .portRow1 div, .portRow2 div {
+        width: 207px;
+        height: 172px;
+    }
+} 
+
+@media screen and (max-width: 375px) {
+    .portRow1 div, .portRow2 div {
+        width: 187px;
+        height: 191px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .portRow1 div, .portRow2 div {
+        width: 160px;
+        height: 130px;
+    }
+} */
