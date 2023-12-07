@@ -1,7 +1,0 @@
-body {
-  margin: 0;
-    background: rgb(25,2,67);
-    background: linear-gradient(270deg, rgba(25,2,67,1) 0%, rgba(42,6,108,1) 100%);
-    overflow: hidden;
-    display: block;
-}
